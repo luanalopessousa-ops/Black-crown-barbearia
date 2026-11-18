@@ -1,0 +1,483 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #f5f1e8;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #080808;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 2px solid #c9a45c;
+}
+
+header h1 {
+    color: #c9a45c;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c9a45c;
+}
+
+/* Página inicial */
+#inicio {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 20px;
+    
+background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.72),
+        rgba(0, 0, 0, 0.72)
+    ),
+    url("img/barbearia.jpg");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+#inicio h2 {
+    font-size: 42px;
+    color: #c9a45c;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+#inicio a {
+    background-color: #c9a45c;
+    color: #111111;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #e2bd75;
+}
+
+/* Seções */
+section {
+    padding: 70px 10%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: #c9a45c;
+}
+
+/* Serviços */
+.lista-servicos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.lista-servicos article {
+    background-color: #1e1e1e;
+    padding: 30px 20px;
+    border: 1px solid #4a3c25;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.lista-servicos article:hover {
+    transform: translateY(-8px);
+}
+
+.lista-servicos h3 {
+    color: #c9a45c;
+    margin-bottom: 15px;
+}
+
+.lista-servicos p {
+    margin-bottom: 10px;
+}
+
+/* Sobre */
+#sobre {
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#sobre p {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Contato */
+#contato {
+    text-align: center;
+}
+
+#contato p {
+    margin-bottom: 25px;
+}
+
+#btn-agendar {
+    background-color: #c9a45c;
+    color: #111111;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#btn-agendar:hover {
+    background-color: #e2bd75;
+}
+
+/* Rodapé */
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #c9a45c;
+    color: #aaaaaa;
+}
+
+/* Celulares e tablets */
+@media (max-width: 900px) {
+    .lista-servicos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    #inicio h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .lista-servicos {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 15px;
+    }
+}
+
+/* Galeria de cortes */
+#galeria {
+    background-color: #171717;
+    text-align: center;
+}
+
+.galeria-descricao {
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeria-item {
+    background-color: #252525;
+    padding: 55px 20px;
+    border: 1px solid #c9a45c;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+}
+
+.galeria-item h3 {
+    color: #c9a45c;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .galeria-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Botões de filtro */
+.filtros-galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.filtro {
+    background-color: transparent;
+    color: #c9a45c;
+    border: 1px solid #c9a45c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filtro:hover,
+.filtro.ativo {
+    background-color: #c9a45c;
+    color: #111111;
+}
+
+/* Ajustes finais da galeria */
+#galeria {
+    display: block;
+    text-align: center;
+}
+
+.filtros-galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.filtro {
+    width: auto;
+    height: auto;
+    min-height: 42px;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.galeria-item {
+    width: 100%;
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .galeria-container {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros-galeria {
+        flex-wrap: wrap;
+    }
+}
+
+/* Correção do layout da galeria */
+#galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#galeria .galeria-descricao {
+    text-align: center;
+}
+
+#galeria .filtros-galeria {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#galeria .galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+#galeria .galeria-item {
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    #galeria .galeria-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Diferenciais da barbearia */
+.sobre-descricao {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #cccccc;
+}
+
+.diferenciais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.diferencial {
+    background-color: #252525;
+    padding: 35px 25px;
+    border: 1px solid #4a3c25;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.diferencial:hover {
+    transform: translateY(-8px);
+}
+
+.diferencial span {
+    font-size: 35px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.diferencial h3 {
+    color: #c9a45c;
+    margin-bottom: 15px;
+}
+
+.diferencial p {
+    color: #cccccc;
+}
+
+@media (max-width: 700px) {
+    .diferenciais {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Área de contato */
+.contato-descricao {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    text-align: center;
+    color: #cccccc;
+}
+
+.contato-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto 35px;
+}
+
+.contato-card {
+    background-color: #252525;
+    padding: 35px 20px;
+    border: 1px solid #4a3c25;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contato-card span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.contato-card h3 {
+    color: #c9a45c;
+    margin-bottom: 15px;
+}
+
+.contato-card p {
+    color: #cccccc;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 700px) {
+    .contato-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Fotografias dos serviços */
+.lista-servicos article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Fotografias da galeria */
+.galeria-item {
+    padding: 15px;
+    overflow: hidden;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.galeria-item h3 {
+    margin-bottom: 8px;
+}

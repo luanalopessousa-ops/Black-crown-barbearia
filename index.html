@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Crown | Barbearia Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>BLACK CROWN</h1>
+        <p>Barbearia Premium</p>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Página inicial -->
+        <section id="inicio">
+            <h2>Seu estilo, nossa tradição.</h2>
+            <p>Mais que um corte, uma experiência premium.</p>
+            <a href="#servicos">Conheça nossos serviços</a>
+        </section>
+
+        <!-- Serviços -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+
+            <div class="lista-servicos">
+                <article>
+                    <h3>Corte Masculino</h3>
+<img src="img/corte.jfif" alt="Corte masculino profissional">
+                    <p>Um corte moderno para valorizar seu estilo.</p>
+                    <p>R$ 45,00</p>
+                </article>
+
+                <article>
+                    <h3>Barba Premium</h3>
+                    <img src="img/barba.jfif" alt="Barba premium">
+                    <p>Modelagem e acabamento profissional.</p>
+                    <p>R$ 35,00</p>
+                </article>
+
+                <article>
+                    <h3>Corte + Barba</h3>
+                    <img src="img/barba e corte.jfif" alt="Corte + Barba">
+                    <p>O combo completo para renovar seu visual.</p>
+                    <p>R$ 70,00</p>
+                </article>
+
+                <article>
+                    <h3>Sobrancelha Masculina</h3>
+                    <img src="img/sobrancelha.jfif" alt="Sobrancelha masculina">
+                    <p>Design discreto e natural.</p>
+                    <p>R$ 20,00</p>
+                </article>
+            </div>
+        </section>
+
+        
+
+<!-- Galeria de cortes -->
+<section id="galeria">
+    <h2>Galeria de Estilos</h2>
+
+    <p class="galeria-descricao">
+        Conheça alguns dos estilos que fazem parte
+        da experiência Black Crown.
+    </p>
+
+    <!-- Botões de filtro -->
+    <div class="filtros-galeria">
+        <button class="filtro ativo" data-filtro="todos">
+            Todos
+        </button>
+
+        <button class="filtro" data-filtro="moderno">
+            Modernos
+        </button>
+
+        <button class="filtro" data-filtro="classico">
+            Clássicos
+        </button>
+    </div>
+
+    <!-- Cards da galeria -->
+    
+
+<div class="galeria-container">
+
+    <div class="galeria-item" data-categoria="moderno">
+        <img src="img/degrade.jfif" alt="Corte degradê masculino">
+        <h3>Degradê</h3>
+        <p>Moderno e estiloso</p>
+    </div>
+
+    <div class="galeria-item" data-categoria="classico">
+        <img src="img/classico.jfif" alt="Corte clássico masculino">
+        <h3>Corte Clássico</h3>
+        <p>Elegância e tradição</p>
+    </div>
+
+    <div class="galeria-item" data-categoria="moderno">
+        <img src="img/navalhado.jfif" alt="Corte navalhado masculino">
+        <h3>Navalhado</h3>
+        <p>Precisão nos detalhes</p>
+    </div>
+
+
+
+
+<!-- Sobre a barbearia -->
+<section id="sobre">
+    <h2>Mais que uma Barbearia</h2>
+
+    <p class="sobre-descricao">
+        Na Black Crown, acreditamos que um bom corte
+        vai além da aparência. Nosso objetivo é oferecer
+        uma experiência de cuidado, estilo e confiança.
+    </p>
+
+    <div class="diferenciais">
+
+        <div class="diferencial">
+            <span>✂️</span>
+            <h3>Profissionais Qualificados</h3>
+            <p>
+                Técnicas modernas e atenção
+                a cada detalhe.
+            </p>
+        </div>
+
+        <div class="diferencial">
+            <span>👑</span>
+            <h3>Experiência Premium</h3>
+            <p>
+                Um ambiente pensado para oferecer
+                conforto e exclusividade.
+            </p>
+        </div>
+
+        <div class="diferencial">
+            <span>💈</span>
+            <h3>Estilo Personalizado</h3>
+            <p>
+                Cada atendimento é pensado
+                para valorizar sua identidade.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+      
+<!-- Contato -->
+<section id="contato">
+    <h2>Agende seu Horário</h2>
+
+    <p class="contato-descricao">
+        Seu próximo visual começa aqui.
+        Conheça nossos horários e agende sua experiência.
+    </p>
+
+    <div class="contato-container">
+
+        <div class="contato-card">
+            <span>📍</span>
+            <h3>Localização</h3>
+            <p>Guarulhos - SP</p>
+            <p>Endereço demonstrativo</p>
+        </div>
+
+        <div class="contato-card">
+            <span>🕒</span>
+            <h3>Horário de Funcionamento</h3>
+            <p>Segunda a Sexta: 09h às 20h</p>
+            <p>Sábado: 09h às 18h</p>
+            <p>Domingo: Fechado</p>
+        </div>
+
+    </div>
+
+    <button id="btn-agendar" type="button">
+        💈 Agendar Horário
+    </button>
+</section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 Black Crown Barbearia</p>
+        <p>Projeto demonstrativo desenvolvido para portfólio.</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
